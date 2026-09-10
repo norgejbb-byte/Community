@@ -1,0 +1,7 @@
+{
+  "name": "DACS Community",
+  "install": "bash .cursor/install.sh",
+  "repositoryDependencies": [
+    "github.com/norgejbb-byte/DACS-Standard"
+  ]
+}
