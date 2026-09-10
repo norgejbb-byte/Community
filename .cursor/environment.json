@@ -1,6 +1,6 @@
 {
   "name": "DACS Community",
-  "install": "bash .cursor/install.sh",
+  "install": "bash -c 'for p in .cursor/install.sh Community/.cursor/install.sh repos/Community/.cursor/install.sh /agent/repos/Community/.cursor/install.sh; do [ -f \"$p\" ] && exec bash \"$p\"; done; echo cannot-find-community-install-script >&2; exit 1'",
   "repositoryDependencies": [
     "github.com/norgejbb-byte/DACS-Standard"
   ]
